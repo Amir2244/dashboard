@@ -1,17 +1,32 @@
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
-export default function Archive() {
+const ArchiveManagement = () => {
     return (
-        <div>
-            <h1 className="text-3xl font-bold mb-4">Archive</h1>
-            <ul className="space-y-2">
-                <li><Link href="/archive/invoices" className="text-blue-500 hover:underline">Archived Invoices</Link>
+        <div className="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-lg">
+            <h1 className="text-4xl font-bold mb-6 text-gray-700">Archive</h1>
+            <ul className="space-y-4">
+                <li>
+                    <Link href="/archive/invoices"
+                          className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg inline-block">
+                        Invoices
+                    </Link>
                 </li>
-                <li><Link href="/archive/tasks" className="text-blue-500 hover:underline">Archived Tasks</Link></li>
-                <li><Link href="/archive/conversations" className="text-blue-500 hover:underline">Archived
-                    Conversations</Link></li>
+                <li>
+                    <Link href="/archive/tasks"
+                          className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg inline-block">
+                        Tasks
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/archive/conversations"
+                          className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg inline-block">
+                        Conversations
+                    </Link>
+                </li>
             </ul>
-            <Link href="/" className="text-blue-500 hover:underline">Back to Home</Link>
         </div>
-    )
-}
+    );
+};
+
+export default ArchiveManagement;

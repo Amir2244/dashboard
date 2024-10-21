@@ -10,7 +10,6 @@ export async function GET() {
 
 export async function POST(request: Request) {
     const body = await request.json()
-    // Create new ad in database
     console.log('Creating new ad:', body)
     return NextResponse.json({ message: 'Ad created' }, { status: 201 })
 }

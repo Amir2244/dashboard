@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@microsoft/signalr": "^8.0.7",
     "lucide-react": "^0.453.0",
     "next": "14.2.15",
     "react": "^18",

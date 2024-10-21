@@ -7,7 +7,7 @@ type DashboardCardProps = {
     color: string
 }
 
-export default function DashboardCard({ title, value, icon, color }: DashboardCardProps) {
+export default function DashboardCard({ title, value, icon, color }: Readonly<DashboardCardProps>) {
     return (
         <div className={`bg-white rounded-lg shadow-md p-6 flex items-center ${color}`}>
             <div className="mr-4">{icon}</div>

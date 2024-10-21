@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server'
 
 export async function GET() {
-    // Fetch job applications from database
     const applications = [
         { id: '1', applicant: 'John Doe', position: 'Task Manager', date: '2024-10-29' },
         { id: '2', applicant: 'Jane Smith', position: 'Customer Support', date: '2024-10-30' },

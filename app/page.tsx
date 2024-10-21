@@ -12,7 +12,7 @@ export default function Home() {
                 <DashboardCard title="New Messages" value={18} icon={<MessageCircle size={24}/>}
                                color="text-purple-600"/>
             </div>
-            {/* Add more dashboard content here */}
+
         </div>
     )
 }

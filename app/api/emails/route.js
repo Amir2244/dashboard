@@ -1,17 +1,17 @@
-import { NextResponse } from 'next/server'
+import {NextResponse} from 'next/server'
 
 export async function GET() {
-    // Fetch emails from database
+
     const emails = [
-        { id: '1', subject: 'New Task Opportunity', sender: 'tasks@example.com', date: '2024-10-27' },
-        { id: '2', subject: 'Task Completion Confirmation', sender: 'support@example.com', date: '2024-10-28' },
+        {id: '1', subject: 'New Task Opportunity', sender: 'tasks@example.com', date: '2024-10-27'},
+        {id: '2', subject: 'Task Completion Confirmation', sender: 'support@example.com', date: '2024-10-28'},
     ]
     return NextResponse.json(emails)
 }
 
 export async function POST(request: Request) {
     const body = await request.json()
-    // Process a new email in the system
+
     console.log('Processing new email:', body)
-    return NextResponse.json({ message: 'Email processed' }, { status: 201 })
+    return NextResponse.json({message: 'Email processed'}, {status: 201})
 }

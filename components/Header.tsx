@@ -8,9 +8,9 @@ export default function Header() {
                     <input
                         type="text"
                         placeholder="Search..."
-                        className="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="px-4 py-2 border text-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
-                    <Search className="ml-2 text-gray-500" />
+                    <Search className="ml-2 text-gray-800" />
                 </div>
                 <div className="flex items-center space-x-4">
                     <Bell className="text-gray-500 cursor-pointer" />

@@ -11,7 +11,7 @@ export async function GET() {
 
 export async function POST(request: Request) {
     const body = await request.json()
-    // Create new notification in database
+
     console.log('Creating new notification:', body)
     return NextResponse.json({ message: 'Notification created' }, { status: 201 })
 }

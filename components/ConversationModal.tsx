@@ -16,7 +16,7 @@ const ConversationModal = ({isOpen, onClose}) => {
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
             <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
-                <h2 className="text-2xl font-bold mb-4">Send Group Message</h2>
+                <h2 className="text-2xl font-bold mb-4 text-gray-400">Send Group Message</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label className="block text-gray-700" htmlFor="recipients">Recipients (comma separated)</label>
@@ -25,7 +25,7 @@ const ConversationModal = ({isOpen, onClose}) => {
                             id="recipients"
                             value={recipients}
                             onChange={(e) => setRecipients(e.target.value)}
-                            className="border border-gray-300 rounded-lg py-2 px-4 w-full"
+                            className="border border-gray-300 rounded-lg py-2 px-4 w-full text-gray-400"
                             required
                         />
                     </div>
@@ -35,7 +35,7 @@ const ConversationModal = ({isOpen, onClose}) => {
                             id="message"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
-                            className="border border-gray-300 rounded-lg py-2 px-4 w-full"
+                            className="border border-gray-300 rounded-lg py-2 px-4 w-full text-gray-400"
                             rows="4"
                             required
                         />
